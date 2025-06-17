@@ -1,0 +1,22 @@
+{
+  "name": "sesi7_api_automation",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "chai": "^5.2.0",
+    "mocha": "^11.6.0",
+    "mochawesome": "^7.1.3"
+  }
+}

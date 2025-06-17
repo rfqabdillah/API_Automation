@@ -1,0 +1,196 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-17T10:10:59.794Z",
+    "end": "2025-06-17T10:11:02.360Z",
+    "duration": 2566,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd08fcf4-d11a-46cc-a79c-9e6ddfcde475",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6db3c961-b6f3-4d80-8a66-d57d6cb54add",
+          "title": "REQRES API Tests",
+          "fullFile": "C:\\Users\\ACER\\Sesi7_API_Automation\\tests\\reqresTest.js",
+          "file": "\\tests\\reqresTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET: should get list of users",
+              "fullTitle": "REQRES API Tests GET: should get list of users",
+              "timedOut": false,
+              "duration": 373,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await fetch(\"https://reqres.in/api/users?page=2\");\nconst data = await response.json();\nexpect(response.status).to.equal(200);\nassert.strictEqual(data.page, 2);\nexpect(data.data).to.be.an(\"array\");",
+              "err": {},
+              "uuid": "44cdc8a4-9851-46c0-8dca-14b583b86f0a",
+              "parentUUID": "6db3c961-b6f3-4d80-8a66-d57d6cb54add",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST: should create a new user",
+              "fullTitle": "REQRES API Tests POST: should create a new user",
+              "timedOut": false,
+              "duration": 642,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await fetch(\"https://reqres.in/api/users\", {\n  method: \"POST\",\n  headers: {\n    \"Content-Type\": \"application/json\",\n    \"x-api-key\": \"reqres-free-v1\"\n  },\n  body: JSON.stringify({\n    name: \"rifqi abdillah\",\n    job: \"leader\"\n  })\n});\nconst data = await response.json();\nexpect(response.status).to.equal(201);\nexpect(data).to.have.property(\"name\", \"rifqi abdillah\");\nexpect(data).to.have.property(\"job\", \"leader\");\nexpect(data).to.have.property(\"id\");",
+              "err": {},
+              "uuid": "6ecb3462-ce36-40a2-8bec-99de901eb5c5",
+              "parentUUID": "6db3c961-b6f3-4d80-8a66-d57d6cb54add",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PATCH: should update user info",
+              "fullTitle": "REQRES API Tests PATCH: should update user info",
+              "timedOut": false,
+              "duration": 714,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await fetch(\"https://reqres.in/api/users/2\", {\n  method: \"PATCH\",\n  headers: {\n    \"Content-Type\": \"application/json\",\n    \"x-api-key\": \"reqres-free-v1\"\n  },\n  body: JSON.stringify({\n    name: \"rifqi abdillah\",\n    job: \"developer\"\n  })\n});\nconst data = await response.json();\nexpect(response.status).to.equal(200);\nexpect(data).to.have.property(\"name\", \"rifqi abdillah\");\nexpect(data).to.have.property(\"job\", \"developer\");",
+              "err": {},
+              "uuid": "d5d4a9b4-c3d8-4ede-897a-2652f613319f",
+              "parentUUID": "6db3c961-b6f3-4d80-8a66-d57d6cb54add",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "DELETE: should delete user",
+              "fullTitle": "REQRES API Tests DELETE: should delete user",
+              "timedOut": false,
+              "duration": 661,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await fetch(\"https://reqres.in/api/users/2\", {\n  method: \"DELETE\",\n  headers: {\n    \"x-api-key\": \"reqres-free-v1\"\n  }\n});\nexpect(response.status).to.equal(204);",
+              "err": {},
+              "uuid": "fc9e32af-085d-4928-8ffa-088f385cce66",
+              "parentUUID": "6db3c961-b6f3-4d80-8a66-d57d6cb54add",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "44cdc8a4-9851-46c0-8dca-14b583b86f0a",
+            "6ecb3462-ce36-40a2-8bec-99de901eb5c5",
+            "d5d4a9b4-c3d8-4ede-897a-2652f613319f",
+            "fc9e32af-085d-4928-8ffa-088f385cce66"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2390,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "028f235b-05b8-4c6e-9814-515392c2da6a",
+          "title": "REQRES JSON Schema Validation",
+          "fullFile": "C:\\Users\\ACER\\Sesi7_API_Automation\\tests\\schemaValidation.js",
+          "file": "\\tests\\schemaValidation.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should match the expected JSON schema for single user",
+              "fullTitle": "REQRES JSON Schema Validation should match the expected JSON schema for single user",
+              "timedOut": false,
+              "duration": 159,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await fetch(\"https://reqres.in/api/users/2\");\nconst data = await response.json();\nconst schema = {\n  type: \"object\",\n  properties: {\n    data: {\n      type: \"object\",\n      properties: {\n        id: { type: \"number\" },\n        email: { type: \"string\" },\n        first_name: { type: \"string\" },\n        last_name: { type: \"string\" },\n        avatar: { type: \"string\" }\n      },\n      required: [\"id\", \"email\", \"first_name\", \"last_name\", \"avatar\"]\n    },\n    support: {\n      type: \"object\",\n      properties: {\n        url: { type: \"string\" },\n        text: { type: \"string\" }\n      },\n      required: [\"url\", \"text\"]\n    }\n  },\n  required: [\"data\", \"support\"]\n};\nconst validate = ajv.compile(schema);\nconst valid = validate(data);\nif (!valid) {\n  console.error(\"Schema validation errors:\", validate.errors);\n}\nexpect(valid, JSON.stringify(validate.errors, null, 2)).to.be.true;",
+              "err": {},
+              "uuid": "c7cf027e-2d65-4848-9108-8cb4ce240e9a",
+              "parentUUID": "028f235b-05b8-4c6e-9814-515392c2da6a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c7cf027e-2d65-4848-9108-8cb4ce240e9a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 159,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.6.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
