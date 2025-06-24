@@ -1,4 +1,3 @@
-# Sesi7_API_Automation
 # 🔍 Sesi7_API_Automation
 
 Project ini adalah bagian dari latihan bersama **Digital Skola kelas QA Engineer batch 10**.  
