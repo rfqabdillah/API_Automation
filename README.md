@@ -1,7 +1,6 @@
-# Sesi7_API_Automation
 # 🔍 Sesi7_API_Automation
 
-Project ini adalah bagian dari latihan bersama **Digital Skola kelas QA Engineer batch 10**.  
+Project ini adalah bagian dari **Digital Skola kelas QA Engineer batch 10**.  
 Dalam project ini dilakukan **API Automation Testing** terhadap endpoint [https://reqres.in](https://reqres.in) menggunakan:
 
 - ✅ Mocha
