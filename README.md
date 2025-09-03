@@ -5,7 +5,6 @@ Dalam project ini dilakukan **API Automation Testing** terhadap endpoint [https:
 
 - ✅ Mocha
 - ✅ Chai
-- ✅ Ajv (JSON Schema Validator)
 - ✅ Mochawesome (Test Reporter)
 
 ---
@@ -15,19 +14,33 @@ Dalam project ini dilakukan **API Automation Testing** terhadap endpoint [https:
 - Node.js (v18+)
 - Mocha (framework pengujian)
 - Chai (assertion library)
-- Ajv (JSON schema validation)
 - Mochawesome (HTML report generator)
 - Native `fetch()` dari Node.js v18+
 
 ---
 
-## 🧪 Daftar Pengujian
+## 📝 Dokumen Terkait
+📄 [Test Plan](https://docs.google.com/document/d/1GedZ0GAm_H1hiBM44Zun03QIYyzUW5Q4DkeCKIa4R7g/edit?usp=sharing)
 
-1. ✅ **GET** list of users  
-2. ✅ **POST** create user (dengan header `x-api-key`)  
-3. ✅ **PATCH** update user info (dengan header `x-api-key`)  
-4. ✅ **DELETE** user (dengan header `x-api-key`)  
-5. ✅ **JSON Schema Validation** untuk endpoint `GET /users/2`
+---
+
+## 🧪 Daftar Pengujian API Reqres
+
+✅ Kasus Positif (Positive Case)
+
+- **GET** - Mengambil daftar pengguna di halaman 2.
+- **GET** - Mengambil data satu pengguna dengan ID 2.
+- **POST** - Membuat pengguna baru dengan data `name` dan `job`.
+- **PATCH** - Memperbarui informasi pengguna dengan ID 2.
+- **DELETE** - Menghapus pengguna dengan ID 2.
+
+---
+
+❌ Kasus Negatif (Negative Case)
+
+- **GET** - Gagal mendapatkan pengguna dengan ID yang tidak ada (ID 26), mengharapkan status `404 Not Found`.
+- **POST** - Gagal mendaftarkan pengguna tanpa *password*, mengharapkan status `400 Bad Request`.
+- **POST** - Gagal login tanpa *password*, mengharapkan status `400 Bad Request`.
 
 ---
 
