@@ -64,7 +64,7 @@ npm run test
 
 Berikut adalah **hasil visual** dari pengujian otomatis:
 
-![Test Report Screenshot](./tests-report.png)
+![Test Report Screenshot](./test-report.png)
 
 
 ---
