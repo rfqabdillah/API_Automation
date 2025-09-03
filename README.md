@@ -36,8 +36,7 @@ Dalam project ini dilakukan **API Automation Testing** terhadap endpoint [https:
 ```
 Sesi7_API_Automation/
 ├── tests/
-│   ├── reqresTest.js           # GET, POST, PATCH, DELETE
-│   └── schemaValidation.js     # Validasi struktur JSON response
+│   └── reqresTest.js           # GET, POST, PATCH, DELETE
 ├── mochawesome-report/         # Output report HTML
 └── package.json
 ```
