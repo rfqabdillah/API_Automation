@@ -21,6 +21,7 @@ Dalam project ini dilakukan **API Automation Testing** terhadap endpoint [https:
 
 ## 📝 Dokumen Terkait
 📄 [Test Plan](https://docs.google.com/document/d/1GedZ0GAm_H1hiBM44Zun03QIYyzUW5Q4DkeCKIa4R7g/edit?usp=sharing)
+📄 [Test Case](https://docs.google.com/spreadsheets/d/18dHtJu35YwmSnSwJ_k4ceaczhSuuQ1HjCEFW_igpdPw/edit?usp=sharing)
 
 ---
 
